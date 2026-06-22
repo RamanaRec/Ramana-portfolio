@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/portfolio.html"
+        },
+        {
+            "source": "/((?!img/|.*\\.(js|css|png|jpg|jpeg|gif|svg|ico)).*)",
+            "destination": "/portfolio.html"
+        }
+    ]
+}
