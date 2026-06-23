@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ramana, a Full Stack Developer building high-performing websites.">
+    <title>Ramana | Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons (Alternative to FontAwesome for modern look) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Ramana <span class="sub-logo">Est. MMXX</span></a>
+            <div class="nav-links">
+                <a href="#about"><span class="nav-num">01</span> About</a>
+                <a href="#services"><span class="nav-num">02</span> Services</a>
+                <a href="#portfolio"><span class="nav-num">03</span> Portfolio</a>
+                <a href="#testimonials"><span class="nav-num">04</span> Testimonials</a>
+                <a href="#contact" class="btn-commission">Contact ↗</a>
+            </div>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="editorial-meta-row">
+                    <span class="meta-item">RAMANA</span>
+                    <span class="meta-item text-center">WEB DEVELOPER • UI AND UX DESIGN • ANDROID APP</span>
+                </div>
+                <div class="editorial-sub-badge">ISSUE 06 — THE CODE, THE CRUCIBLE, THE CREATOR</div>
+
+                <div class="hero-grid-body">
+                    <div class="hero-img-col">
+                        <div class="hero-image-wrapper"
+                            style="border: none; box-shadow: none; background: transparent; height: 100%; width: 100%;">
+                            <img src="img/logo1.jpg" alt="Featured Developer Illustration" class="hero-image"
+                                style="object-fit: cover; width: 100%; height: 100%; mix-blend-mode: multiply;">
+                        </div>
+                    </div>
+                    <div class="hero-text-col">
+                        <h1 class="hero-title">Custom Websites &amp; <span class="italic-serif">Mobile Apps</span> Built
+                            for Growth.</h1>
+                        <p class="hero-subtitle">I design, develop, and deliver high-performance websites and mobile
+                        </p>
+
+                        <div class="hero-cta-group">
+                            <a href="#contact" class="btn btn-primary">Start a Project ↗</a>
+                            <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="2" data-suffix="+">0+</span>
+                                <span class="stat-label">Years of Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="25" data-suffix="+">0+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="100" data-suffix="%">0%</span>
+                                <span class="stat-label">Client Trust</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal-left">
+                        <!-- Mock IDE code typing window -->
+                        <div class="ide-wrapper">
+                            <div class="ide-header">
+                                <div class="ide-dots">
+                                    <span class="ide-dot red"></span>
+                                    <span class="ide-dot yellow"></span>
+                                    <span class="ide-dot green"></span>
+                                </div>
+                                <div class="ide-title">
+                                    <i class="ph ph-file-js text-primary"></i> galaxy_runner.js — Editor
+                                </div>
+                                <div class="ide-actions">
+                                    <span class="ide-badge">JS</span>
+                                </div>
+                            </div>
+                            <div class="ide-body">
+                                <div class="ide-editor-panel">
+                                    <div class="line-numbers" id="line-numbers">
+                                        <!-- Javascript generated line numbers -->
+                                    </div>
+                                    <pre class="code-output"
+                                        id="code-output"><code id="code-content"></code><span class="code-cursor"></span></pre>
+                                </div>
+                                <div class="ide-preview-panel">
+                                    <div class="terminal-header">
+                                        <i class="ph ph-terminal"></i> Preview Terminal
+                                    </div>
+                                    <div class="terminal-screen" id="terminal-screen">
+                                        <div class="terminal-line text-muted">> Waiting for code compiling...</div>
+                                    </div>
+                                    <div class="game-container" id="game-container">
+                                        <canvas id="game-canvas"></canvas>
+                                        <div class="game-overlay" id="game-overlay">
+                                            <div class="overlay-text">
+                                                <i class="ph ph-arrows-out-cardinal ph-spin"></i>
+                                                <span>SYSTEM OFFLINE</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text reveal-right">
+                        <h2 class="section-title">Beyond just <span class="gradient-text">code</span>.</h2>
+                        <p>I don't just write code; I solve business problems. With a background in design and robust
+                            software engineering, I bridge the gap between aesthetics and functionality. My goal is to
+                            build digital products that not only look spectacular but also perform flawlessly under high
+                            load.</p>
+                        <div class="skills">
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">React</span>
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">UI/UX Design</span>
+                            <span class="skill-pill">Python</span>
+                        </div>
+                        <a href="#services" class="btn btn-outline" style="margin-top: 2rem;">Explore My Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section parallax-container" id="services">
+            <div class="floating-parallax-item cyan parallax-left" style="top: 15%; left: 3%;">{ }</div>
+            <div class="floating-parallax-item purple parallax-right" style="top: 55%; right: 3%;">&lt;/&gt;</div>
+            <div class="container reveal">
+                <div class="section-header text-center">
+                    <h2 class="section-title">How I can <span class="gradient-text">help you</span></h2>
+                    <p class="section-desc">Tailored solutions designed to scale your business and elevate your online
+                        presence.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- UI/UX Package -->
+                    <div class="service-card reveal-left">
+                        <i class="ph ph-palette service-icon"></i>
+                        <h3>Basic</h3>
+                        <p>Complete user research, high-fidelity wireframes, and interactive designs built for maximum
+                            conversion.</p>
+                        <ul class="service-features">
+                            <li><i class="ph ph-check-circle"></i> Basic frontend</li>
+                            <li><i class="ph ph-check-circle"></i> Contact form</li>
+                            <li><i class="ph ph-check-circle"></i> Automatic emails</li>
+                            <li><i class="ph ph-check-circle"></i> mobile usage</li>
+                            <li><i class="ph ph-check-circle"></i> 1 page </li>
+                        </ul>
+                        <div class="service-footer">
+                            <span class="price">₹1,499</span>
+                            <a href="#contact" class="btn btn-sm btn-outline">Order Now</a>
+                        </div>
+                    </div>
+                    <!-- Full Stack Package -->
+                    <div class="service-card popular reveal">
+                        <div class="popular-badge">Best Value</div>
+                        <i class="ph ph-code service-icon"></i>
+                        <h3>standard</h3>
+                        <p>End-to-end custom web applications built using React, Node.js, and databases. Fast and
+                            secure.</p>
+                        <ul class="service-features">
+                            <li><i class="ph ph-check-circle"></i> Frontend & Backend Integration</li>
+                            <li><i class="ph ph-check-circle"></i> contact form and emil</li>
+                            <li><i class="ph ph-check-circle"></i> UI and UX</li>
+                            <li><i class="ph ph-check-circle"></i> 4 - 5 Pages</li>
+                        </ul>
+                        <div class="service-footer">
+                            <span class="price">₹3,999</span>
+                            <a href="#contact" class="btn btn-sm btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                    <!-- Complete Suite Package -->
+                    <div class="service-card popular reveal-right">
+                        <div class="popular-badge">Most Popular</div>
+                        <i class="ph ph-rocket-launch service-icon"></i>
+                        <h3>pro</h3>
+                        <p>The ultimate design & development package. Build and launch your product from scratch with
+                            support.</p>
+                        <ul class="service-features">
+                            <li><i class="ph ph-check-circle"></i> Complete UI/UX design</li>
+                            <li><i class="ph ph-check-circle"></i> Full-stuck Web Development</li>
+                            <li><i class="ph ph-check-circle"></i> Database & Payment Gateway</li>
+                            <li><i class="ph ph-check-circle"></i> 3 Months Tech Support</li>
+                            <li><i class="ph ph-check-circle"></i> more than 5-10 pages</li>
+                        </ul>
+                        <div class="service-footer">
+                            <span class="price">₹9,999</span>
+                            <a href="#contact" class="btn btn-sm btn-outline">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section parallax-container" id="portfolio">
+            <div class="floating-parallax-item purple parallax-left" style="top: 25%; left: 2%;">API</div>
+            <div class="floating-parallax-item cyan parallax-right" style="top: 75%; right: 2%;">UI</div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected <span class="gradient-text">Works</span></h2>
+                    <p class="section-desc">A showcase of the high-quality digital products I've crafted recently.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <!-- Project 1 (Img Right, Info Left) -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper reveal-right">
+                            <img src="img/logo4.jpg" alt="UI & UX Design Portfolio" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#contact" class="view-btn"><i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info reveal-left">
+                            <div class="project-meta-row">
+                                <span class="project-meta-label">01 — UI AND UX</span>
+
+                            </div>
+                            <h3 class="project-title">Interactive prototypes built for <span
+                                    class="italic-serif">conversion</span> and retention.</h3>
+                            <p class="project-desc">Complete user research, high-fidelity wireframes, and interactive
+                                designs crafted to match modern premium brand aesthetics.</p>
+                            <div class="project-feature-foot">
+                                <span class="feat-num">01</span>
+                                <span class="feat-text">Figma Prototype & Design System</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Img Left, Info Right) -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper reveal-left">
+                            <img src="img/logo2.jpg" alt="Web Development" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#contact" class="view-btn"><i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info reveal-right">
+                            <div class="project-meta-row">
+                                <span class="project-meta-label">02 — WEB DEVELOP</span>
+                            </div>
+                            <h3 class="project-title">High-performance custom web applications with <span
+                                    class="italic-serif">responsive</span> speed.</h3>
+                            <p class="project-desc">Clean frontend frameworks connected to fast server endpoints.
+                                Optimized for search engines and high traffic loads.</p>
+                            <div class="project-feature-foot">
+                                <span class="feat-num">02</span>
+                                <span class="feat-text">React & Node.js Stack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (Img Right, Info Left) -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper reveal-right">
+                            <img src="img/logo3.jpg" alt="Android App Development" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#contact" class="view-btn"><i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info reveal-left">
+                            <div class="project-meta-row">
+                                <span class="project-meta-label">03 — ANDROID APP DEVELOP</span>
+                            </div>
+                            <h3 class="project-title">Native mobile apps engineered with modern <span
+                                    class="italic-serif">architecture</span>.</h3>
+                            <p class="project-desc">Responsive layouts, background synchronization workers, and
+                                deep-linked native modules ensuring fluid user interactions.</p>
+                            <div class="project-feature-foot">
+                                <span class="feat-num">03</span>
+                                <span class="feat-text">Kotlin & android studio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Me Section -->
+        <section class="why-me section parallax-container" id="benefits">
+            <div class="floating-parallax-item cyan parallax-left" style="top: 35%; left: 4%;">const</div>
+            <div class="floating-parallax-item purple parallax-right" style="top: 65%; right: 4%;">await</div>
+            <div class="container reveal">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Why work <span class="gradient-text">with me?</span></h2>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="icon-box"><i class="ph ph-lightning"></i></div>
+                        <h3>Lightning Fast</h3>
+                        <p>Performance remains my top priority. Every site is optimized for maximum speed and Core Web
+                            Vitals.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon-box"><i class="ph ph-shield-check"></i></div>
+                        <h3>Clean & Secure Code</h3>
+                        <p>I write maintainable, well-documented, and secure code following industry best practices.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon-box"><i class="ph ph-users"></i></div>
+                        <h3>Ongoing Support</h3>
+                        <p>I don't just deliver and disappear. I provide standard maintenance windows and robust
+                            support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Client <span class="gradient-text">Reviews</span></h2>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="quote">"Ramana completely transformed our online presence. The new dashboard is
+                            visually striking and unbelievably fast. Worth every penny."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">S</div>
+                            <div>
+                                <h4>Sarah Jenkins</h4>
+                                <span>CEO, TechGrowth</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="quote">"Professional, highly skilled, and easy to work with. He understood our complex
+                            requirements immediately and delivered ahead of schedule."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">M</div>
+                            <div>
+                                <h4>Marcus Chen</h4>
+                                <span>CTO, Finova</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container cta-container reveal">
+                <div class="glow glow-3"></div>
+                <h2>Ready to grow your business?</h2>
+                <p>Let's turn your ideas into a high-performing reality. Bring your vision, and I'll handle the tech
+                    execution.</p>
+                <div class="hero-cta-group" style="justify-content: center;">
+                    <a href="#contact" class="btn btn-primary">Start a Project</a>
+                    <a href="https://wa.me/8838112978" target="_blank" class="btn btn-secondary">WhatsApp Me <i
+                            class="ph ph-whatsapp-logo"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal-left">
+                        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                        <p>I'm currently available for freelance projects and full-time opportunities. Send me a message
+                            and I'll get back to you within 24 hours.</p>
+                        <div class="contact-methods">
+                            <a href="https://mail.google.com/mail/?view=cm&to=ramana.r122007@gmail.com&su=Project%20Inquiry&body=Hi%20Ramana,%0A%0A"
+                                target="_blank" class="contact-method">
+                                <div class="icon-box-sm"><i class="ph ph-envelope"></i></div>
+                                <span>ramana.r122007@gmail.com</span>
+                            </a>
+                            <a href="https://wa.me/8838112978" target="_blank" class="contact-method">
+                                <div class="icon-box-sm"><i class="ph ph-whatsapp-logo"></i></div>
+                                <span>+91 8838112978</span>
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/RamanaRec" target="_blank" class="social-icon"><i
+                                    class="ph ph-github-logo"></i></a>
+                            <a href="https://www.linkedin.com/in/ramana-r-336183332/" target="_blank"
+                                class="social-icon"><i class="ph ph-linkedin-logo"></i></a>
+                            <a href="#" class="social-icon"><i class="ph ph-twitter-logo"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal-right" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="john@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required
+                                placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span>Send Message</span>
+                            <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Ramana. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB4CgoIU6S2Li9v4ioYhs_hoLnIFDpQfaA",
+            authDomain: "portfolio-1ed26.firebaseapp.com",
+            projectId: "portfolio-1ed26",
+            storageBucket: "portfolio-1ed26.firebasestorage.app",
+            messagingSenderId: "497644475429",
+            appId: "1:497644475429:web:19db34a9fe59b31e799bcc"
+        };
+
+        // Initialize Firebase
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        // Import Firestore SDK and set up database
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
+        const db = getFirestore(app);
+        // Helper to save contact data
+        window.saveContact = async (data) => {
+            await addDoc(collection(db, "contacts"), data);
+        };
+    </script>
+</body>
+
+</html>
